@@ -61,15 +61,12 @@ This project utilizes the following modern Android components:
     * **Easy to use:** The components are easy to use and customize.
     * **Dynamic colors**: Material 3 includes dynamic colors, which allows the app to be themed dynamically based on the user's wallpaper.
 
-### 6. StateFlow (Used in this Project)
+## Screenshots
+### Main Screen
+![Main Screen](screenshots/1.png)
 
-*   **What it is:** StateFlow is a state-holder observable flow that emits state updates to its collectors.
-* **How it is used**: The `SandwichViewModel` is likely using StateFlows to expose the data to the composables using `collectAsState`.
-* **Benefits**:
-    * **Lifecycle awareness**: UI only updates when the lifecycle is in an active state.
-    * **Easy conversion to state**: StateFlows can be easily converted into composable state.
-    * **Observable data:** Changes to data are automatically reflected in the UI.
-
+### Detail Screen
+![Detail Screen](screenshots/2.png)
 ## Getting Started
 
 1.  **Clone the Repository:** `git clone [repository URL]`
