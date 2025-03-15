@@ -1,10 +1,10 @@
 # Sandwich Club Project
 
-This project is a demonstration Android application built using modern Android development principles and components. It serves as a showcase for how to leverage the power of Jetpack Compose, Navigation, Hilt for dependency injection, and more to create a clean, maintainable, and efficient application.
+This project is a demonstration Android application built using modern Android development principles and components. It serves as a showcase for how to leverage the power of Jetpack Compose, Navigati[...]
 
 ## Project Overview
 
-The Sandwich Club Project is an app that displays a list of sandwiches and allows the user to view detailed information about each sandwich. It showcases several key modern Android components and practices, providing a solid foundation for building robust and scalable applications.
+The Sandwich Club Project is an app that displays a list of sandwiches and allows the user to view detailed information about each sandwich. It showcases several key modern Android components and prac[...]
 
 ## Key Technologies & Modern Android Components
 
@@ -12,7 +12,7 @@ This project utilizes the following modern Android components:
 
 ### 1. Jetpack Compose
 
-*   **What it is:** Jetpack Compose is Android's modern, declarative UI toolkit. It simplifies and accelerates UI development by allowing you to describe your UI's appearance and behavior using composable functions.
+*   **What it is:** Jetpack Compose is Android's modern, declarative UI toolkit. It simplifies and accelerates UI development by allowing you to describe your UI's appearance and behavior using compos[...]
 *   **How it's used:** This project uses Jetpack Compose to build all user interfaces. This includes the sandwich list, detail views, and all other UI elements.
 *   **Benefits:**
     *   **Declarative:** UI is defined as a function of data, leading to more predictable and testable UIs.
@@ -34,7 +34,7 @@ This project utilizes the following modern Android components:
 
 ### 3. Hilt (Dependency Injection)
 
-*   **What it is:** Hilt is Android's recommended library for dependency injection, built on top of Dagger. It simplifies injecting dependencies into Android classes and provides a standard way to structure your application's dependency graph.
+*   **What it is:** Hilt is Android's recommended library for dependency injection, built on top of Dagger. It simplifies injecting dependencies into Android classes and provides a standard way to str[...]
 *   **How it's used:** Hilt is used in this project to manage dependencies, such as the `SandwichViewModel`, data repositories, and any other services or classes that require dependencies.
 *   **Benefits:**
     *   **Simplified Dependency Management:** Reduces boilerplate and simplifies dependency injection.
@@ -62,11 +62,11 @@ This project utilizes the following modern Android components:
     * **Dynamic colors**: Material 3 includes dynamic colors, which allows the app to be themed dynamically based on the user's wallpaper.
 
 ## Screenshots
-### Main Screen
-![Main Screen](screenshots/1.png)
+<div style="display: flex; justify-content: space-between;">
+<img src="screenshots/1.png" alt="Main Screen" width="45%"/> 
+<img src="screenshots/2.png" alt="Detail Screen" width="45%">
+</div>
 
-### Detail Screen
-![Detail Screen](screenshots/2.png)
 ## Getting Started
 
 1.  **Clone the Repository:** `git clone [repository URL]`
@@ -92,5 +92,3 @@ This project serves as an excellent starting point for further exploration of mo
 *   **Testing:** Adding unit and UI tests.
 *   **Animations:** Adding more complex animations.
 * **Error Handling**: Implement error handling for all the network and database calls.
-
-
