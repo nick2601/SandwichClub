@@ -52,33 +52,7 @@ This project utilizes the following modern Android components:
     *   **Separation of Concerns:** Keeps UI logic separate from the UI layer, improving testability and maintainability.
     * **Data sharing**: Makes it easy to share the data between different composable functions.
 
-### 5. LiveData (May or May Not Be in Your Code)
-
-*   **What it is:** LiveData is a data holder class that is lifecycle-aware. It's an observable data holder, meaning it can notify observers when its data changes.
-* **How it is used**: If you've been using `collectAsState` in your composables to get data from a `Flow`, it is very likely that you don't need to use `LiveData`.
-*   **Benefits:**
-    *   **Lifecycle Awareness:** UI only updates when the lifecycle is in an active state.
-    *   **Observable Data:** Changes to data are automatically reflected in the UI.
-
-### 6. StateFlow (Used in this Project)
-
-*   **What it is:** StateFlow is a state-holder observable flow that emits state updates to its collectors.
-* **How it is used**: The `SandwichViewModel` is likely using StateFlows to expose the data to the composables using `collectAsState`.
-* **Benefits**:
-    * **Lifecycle awareness**: UI only updates when the lifecycle is in an active state.
-    * **Easy conversion to state**: StateFlows can be easily converted into composable state.
-    * **Observable data:** Changes to data are automatically reflected in the UI.
-
-### 7. Coroutines
-
-*   **What it is:** Coroutines are a concurrency design pattern that simplifies asynchronous programming in Kotlin. They allow you to write asynchronous code in a sequential, readable way.
-*   **How it's used:** Coroutines are used in this project for any long-running or asynchronous tasks, such as network requests or database operations.
-*   **Benefits:**
-    *   **Simplified Asynchronous Code:** Makes asynchronous code look and behave like synchronous code.
-    *   **Lightweight:** Creating many coroutines is much cheaper than creating many threads.
-    *   **Structured Concurrency:** Coroutines support structured concurrency, which makes it easier to reason about concurrency and avoid common pitfalls.
-
-### 8. Material 3
+### 5. Material 3
 
 * **What it is:** Material 3 is the latest version of Material Design that includes updated theming, components and dynamic color support.
 * **How it is used:** The application uses Material 3 to provide the styling for the UI components.
@@ -113,6 +87,4 @@ This project serves as an excellent starting point for further exploration of mo
 *   **Animations:** Adding more complex animations.
 * **Error Handling**: Implement error handling for all the network and database calls.
 
-## License
 
-[Your License Here]
