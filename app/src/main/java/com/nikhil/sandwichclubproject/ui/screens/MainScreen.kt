@@ -38,11 +38,13 @@ fun MainScreen(viewModel: SandwichViewModel, onSandwichClick: (Sandwich) -> Unit
                     elevation = CardDefaults.cardElevation(4.dp)
                 ) {
                     Row(
-                        modifier = Modifier.padding(8.dp),
+                        modifier = Modifier
+                            .padding(8.dp)
+                            .fillMaxWidth(),
                         verticalAlignment = androidx.compose.ui.Alignment.CenterVertically
                     ) {
                         Image(
-                            painter = rememberAsyncImagePainter(sandwiches[index].name),
+                            painter = rememberAsyncImagePainter(sandwiches[index].image),
                             contentDescription = sandwiches[index].name.mainName,
                             contentScale = ContentScale.Crop,
                             modifier = Modifier
@@ -50,10 +52,17 @@ fun MainScreen(viewModel: SandwichViewModel, onSandwichClick: (Sandwich) -> Unit
                                 .clip(MaterialTheme.shapes.medium)
                         )
                         Spacer(modifier = Modifier.width(12.dp))
-                        Text(
-                            text = sandwiches[index].name.mainName,
-                            style = MaterialTheme.typography.titleMedium
-                        )
+                        Column {
+                            Text(
+                                text = sandwiches[index].name.mainName,
+                                style = MaterialTheme.typography.titleMedium
+                            )
+                            Text(
+                                text = sandwiches[index].placeOfOrigin,
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
                     }
                 }
             }
